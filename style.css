@@ -1,40 +1,70 @@
 body {
-  margin: 2em;
+    background: url('C:/Users/asus/Documents/business1/abstract-digital-grid-black-background.jpg') center/cover fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    
 }
-aside {
-    background: #1f8dd6; /* same color as selected state on site menu */
-    padding: 0.3em 1em;
-    border-radius: 3px;
+
+form {
+    background: rgba(255, 255, 255, 0.059);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+input, textarea {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0);
+}
+
+input[type="submit"] {
+    background: #3498db;
     color: #fff;
-    margin-bottom: 2em;
+    cursor: pointer;
+    width : 50%;
+    display: block;
+            margin: 0 auto; /* Center the submit button */
+    
 }
-textarea {
-  width: 100%;
+
+input[type="submit"]:hover {
+    background: #2980b9;
 }
-.content-head {
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin: 2em 0 1em;
-}
-.is-center {
-  text-align: center;
-}
-.button-success {
-  color: white;
-  border-radius: 4px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  background: rgb(28, 184, 65); /* this is a green */
-}
-.button-xlarge {
-  font-size: 125%;
-}
-button {
-  float: right;
-}
-#name, #email {
-  width: 50%;
-}
-.honeypot-field {
-  display: none;
-}
+
+
+  
+  textarea {
+    width: 100%;
+  
+  }
+  .button-success {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgba(28, 49, 184, 0); /* this is a green */
+  }
+  .button-xlarge {
+    font-size: 125%;
+  }
+  button {
+    display: block;
+            margin: 0 auto;
+  }
+  #name, #email {
+    width: 50%;
+  }
+  .honeypot-field {
+    display: none;
+  }
