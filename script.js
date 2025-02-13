@@ -63,4 +63,22 @@ for (let i = 0; i < 10; i++) {
     ctx.fillStyle = '#87CEEB'; // pixel blue
     ctx.fill();
 }
+// ...
 
+// Draw baby breath bouquet
+ctx.fillStyle = '#87CEEB'; // pixel blue
+ctx.beginPath();
+ctx.arc(canvas.width - 100, canvas.height - 100, 30, 0, 2 * Math.PI);
+ctx.fill();
+
+for (let i = 0; i < 10; i++) {
+    ctx.beginPath();
+    ctx.arc(canvas.width - 100 + Math.cos(i * Math.PI / 5) * 40, canvas.height - 100 + Math.sin(i * Math.PI / 5) * 40, 15, 0, 2 * Math.PI);
+    ctx.fill();
+}
+
+for (let i = 0; i < 5; i++) {
+    ctx.beginPath();
+    ctx.arc(canvas.width - 100 + Math.cos(i * Math.PI / 2.5) * 60, canvas.height - 100 + Math.sin(i * Math.PI / 2.5) * 60, 10, 0, 2 * Math.PI);
+    ctx.fill();
+}
