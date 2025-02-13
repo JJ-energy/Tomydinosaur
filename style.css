@@ -1,5 +1,5 @@
 body {
-    background-color: #000;
+    background-color: #ADD8E6; /* Light blue background */
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -11,3 +11,101 @@ body {
     display: block;
 }
 
+.message-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.petals {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.petals span {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #FFC0CB; /* Pink petals */
+    border-radius: 50%;
+    animation: fall 3s infinite;
+}
+
+@keyframes fall {
+    0% {
+        top: -10px;
+    }
+    100% {
+        top: 100vh;
+    }
+}
+
+.petal-button {
+    background-color: #FFC0CB; /* Pink petal button */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.petal-button:hover {
+    background-color: #FFB6C1; /* Lighter pink on hover */
+}
+
+.photo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.photo-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.title-container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+}
+
+.link-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.link-container a {
+    text-decoration: none;
+    color: #333;
+    margin: 10px;
+}
+
+.link-container a:hover {
+    color: #666;
+}
+
+.final-message-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
